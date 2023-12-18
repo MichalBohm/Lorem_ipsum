@@ -78,7 +78,7 @@ for i in range(Pocet_odstavcu):
     x = random.randint(1, 6)
     odstavec=[]
     for y in range(x):
-        pocet_slov = random.randint(4, 8)
+        pocet_slov = random.randint(10, 34)
         Slova = []
         
         while len(Slova) < pocet_slov:
@@ -86,7 +86,6 @@ for i in range(Pocet_odstavcu):
             
             if Slovo not in Slova:
                 found_chars = [char for char in Slovo if char in 'cčdjňšť']
-                
                 if len(found_chars) > 0:
                     index = Slovo.index(found_chars[0])
                     
