@@ -70,8 +70,8 @@
 import random
 import string
 
-abeceda = 'abcčdďeěfghiíjklmnňoópqrsštťuúůvwxyýzž'
-
+abeceda = 'abcčdďeěfghiíjklmnňoópqrřsštťuúůvwxyýzž'
+abeceda = abeceda.replace('a', 'a' / 3)
 Pocet_odstavcu = int(input("Počet odstavců? "))
 
 for i in range(Pocet_odstavcu):
@@ -82,18 +82,27 @@ for i in range(Pocet_odstavcu):
         Slova = []
         
         while len(Slova) < pocet_slov:
-            Slovo = "".join(random.sample(abeceda, random.randint(3, 8)))
+            Slovo = "".join(random.sample(abeceda, random.randint(3,8)))
             
             if Slovo not in Slova:
-                found_chars = [char for char in Slovo if char in 'cčdjňšť']
-                if len(found_chars) > 0:
-                    index = Slovo.index(found_chars[0])
+                nalezene_slovo_I = [char for char in Slovo if char in 'cčďjňšťřž']
+                if len(nalezene_slovo_I) > 0:
+                    index = Slovo.index(nalezene_slovo_I[0])
                     
                     if index < len(Slovo) - 1 and Slovo[index + 1] == 'i':
                         Slova.append(Slovo)
+            if Slovo not in Slova:
+                nalezene_slovo_Y = [char for char in Slovo if char in 'hkr']
+                if len(nalezene_slovo_Y) > 0:
+                    index = Slovo.index(nalezene_slovo_Y[0])
+                    
+                    if index < len(Slovo) - 1 and Slovo[index + 1] == 'y':
+                        Slova.append(Slovo) 
+        
         sentence = ' '.join(Slova).capitalize() + '.'
         odstavec.append(sentence)
 
     seznam = '\n'.join(odstavec)
     print(seznam)
     print()
+
