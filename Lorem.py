@@ -73,3 +73,4 @@ elif slabiky == "n":
         seznam = '\n'.join(odstavec)
         print(seznam)
         print()
+        
