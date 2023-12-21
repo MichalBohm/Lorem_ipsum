@@ -4,8 +4,9 @@
 
     abeceda = 'abcčdďeěéfghiíjklmnňoópqrřsštťuúůvyýzž'
     abeceda_bez_carek = 'abcčdďeěfghijklmnňopqrřsštťuvyzž'
+    dlouha_pismena = input("Dlouhé písmena? př.(ý,é) (y/n)")
 
-Uživatel je vyzván programem na počet odstavců a vět a jestli uživatel chce dlouhé slabiky.
+Uživatel je vyzván programem na počet odstavců a vět a jestli uživatel chce dlouhé písmena.
 
     Pocet_odstavcu = int(input("Počet odstavců? "))
     pocet_slov =int(input("Počet slov?"))

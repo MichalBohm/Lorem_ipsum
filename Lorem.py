@@ -5,10 +5,10 @@ import string
 abeceda = 'abcčdďeěéfghiíjklmnňoópqrřsštťuúůvyýzž'
 abeceda_bez_carek = 'abcčdďeěfghijklmnňopqrřsštťuvyzž'
 
-slabiky = input("Dlouhé slabiky? (y/n)")
+dlouha_pismena = input("Dlouhé písmena? př.(ý,é) (y/n)")
 Pocet_odstavcu = int(input("Počet odstavců? "))
 pocet_slov = int(input("Počet slov?"))
-if slabiky == "y":
+if dlouha_pismena == "y":
     for i in range(Pocet_odstavcu):
         pocet_vet_v_odstavci = random.randint(1, 6)
         odstavec=[]
@@ -41,7 +41,7 @@ if slabiky == "y":
         print(seznam)
         print()
 
-elif slabiky == "n":
+elif dlouha_pismena == "n":
     for i in range(Pocet_odstavcu):
         pocet_vet_v_odstavci = random.randint(1, 6)
         odstavec=[]
