@@ -1,5 +1,7 @@
 Český Lorem ipsum generátor (tak trochu)
 
+POKUD NAPÍŠETE ŠPATNĚ NĚJÁKÉ ČÍSLO NEBO SLOVO MUSÍTE KÓD RESETOVAT!!!!
+
 Řešil jsem to pomocí stringu, ve kterém je zapsaná celá abeceda bez W, X, CH. 
 
     abeceda = 'abcčdďeěéfghiíjklmnňoópqrřsštťuúůvyýzž'
