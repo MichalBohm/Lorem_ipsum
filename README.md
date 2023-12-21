@@ -30,7 +30,7 @@ Poté se generuje náhodné slovo pomocí funkcí random.sample a random.randint
 Slovo je sestaveno náhodným výběrem znaků z abecedy a jeho délka je mezi 8 a 14 znaky
 Pomocí iterace a komprehence https://www.itnetwork.cz/python/kolekce/komprehence-lambda-vyrazy-a-funkce-v-pythonu
 
-Slovo = "".join(random.sample(abeceda, random.randint(8,14))) 
+    Slovo = "".join(random.sample(abeceda, random.randint(8,14))) 
 
 Kontroluje duplikáty v seznamu.
 Když není duplikát tak hledá jestli v "Slovo" je nějáké z těchto písmen
