@@ -35,14 +35,14 @@ Slovo = "".join(random.sample(abeceda, random.randint(8,14)))
 Kontroluje duplikáty v seznamu.
 Když není duplikát tak hledá jestli v "Slovo" je nějáké z těchto písmen
 
-if Slovo not in Slova:
-    nalezene_slovo_I = [char for char in Slovo if char in 'cčďjňšťřž']
+    if Slovo not in Slova:
+        nalezene_slovo_I = [char for char in Slovo if char in 'cčďjňšťřž']
 
 zjišťuje jestli je nějaký z těhle znaků 'cčďjňšťřž' v nalezene_slovo_I
 a jestli je, tak vytvoří proměnnou "index která nachází pozici prvního písmena z "nalezene_slovo_I" v "Slovo"
 
-if len(nalezene_slovo_I) > 0:
-    index = Slovo.index(nalezene_slovo_I[0])
+    if len(nalezene_slovo_I) > 0:
+        index = Slovo.index(nalezene_slovo_I[0])
    
 pokud proměnná index je menší než délka "Slovo" - 1 a ve "Slovo" není za 'cčďjňšťřž' "y" 
 tak se "Slovo" dá do seznamu "Slova"
@@ -59,6 +59,6 @@ a "veta" se přidá do seznamu "odstavec"
 poté spojil "\n" (nový řádek) a odstavec do "seznam" a ten jsem printnul
 ten "print()" je pro mezery mezi odstavci. vyřešil jsem to takhle protože kdybych jen printl "odstavec" tak mi to vytiskne jen seznam těch slov
 
-seznam = '\n'.join(odstavec)
-print(seznam)
-print()
+    seznam = '\n'.join(odstavec)
+    print(seznam)
+    print()
