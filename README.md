@@ -3,7 +3,7 @@
 Řešil jsem to pomocí stringu, ve kterém je zapsaná celá abeceda bez W, X, CH. 
 
     abeceda = 'abcčdďeěéfghiíjklmnňoópqrřsštťuúůvyýzž'
-    abeceda_bez_dlouhych_slabik = 'abcčdďeěfghijklmnňopqrřsštťuvyzž'
+    abeceda_bez_carek = 'abcčdďeěfghijklmnňopqrřsštťuvyzž'
 
 Uživatel je vyzván programem na počet odstavců a vět a jestli uživatel chce dlouhé slabiky.
 

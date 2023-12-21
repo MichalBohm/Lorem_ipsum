@@ -3,7 +3,7 @@ import random
 import string
 
 abeceda = 'abcčdďeěéfghiíjklmnňoópqrřsštťuúůvyýzž'
-abeceda_bez_dlouhych_slabik = 'abcčdďeěfghijklmnňopqrřsštťuvyzž'
+abeceda_bez_carek = 'abcčdďeěfghijklmnňopqrřsštťuvyzž'
 
 slabiky = input("Dlouhé slabiky? (y/n)")
 Pocet_odstavcu = int(input("Počet odstavců? "))
@@ -50,7 +50,7 @@ elif slabiky == "n":
             Slova = []
 
             while len(Slova) < pocet_slov:
-                Slovo = "".join(random.sample(abeceda_bez_dlouhych_slabik, random.randint(4,8)))
+                Slovo = "".join(random.sample(abeceda_bez_carek, random.randint(4,8)))
 
                 if Slovo not in Slova:
                     nalezene_slovo_I = [char for char in Slovo if char in 'cčďjňšťřž']
