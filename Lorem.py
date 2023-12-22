@@ -25,14 +25,14 @@ if dlouha_pismena == "y":
                     if len(nalezene_slovo_I) > 0:
                         index = Slovo.index(nalezene_slovo_I[0])
 
-                        if index < len(Slovo) - 1 and Slovo[index + 1] != 'y' and Slovo[index + 1] != 'č' and Slovo[index + 1] != 'c' and Slovo[index + 1] != 'ď' and Slovo[index + 1] != 'j' and Slovo[index + 1] != 'ň' and Slovo[index + 1] != 'š' and Slovo[index + 1] != 'ť' and Slovo[index + 1] != 'ř' and Slovo[index + 1] != 'ž' and Slovo[index + 1] != 'ě':
+                        if index < len(Slovo) - 1 and Slovo[index + 1] != 'y' and Slovo[index + 1] != 'ý' and Slovo[index + 1] != 'č' and Slovo[index + 1] != 'c' and Slovo[index + 1] != 'ď' and Slovo[index + 1] != 'j' and Slovo[index + 1] != 'ň' and Slovo[index + 1] != 'š' and Slovo[index + 1] != 'ť' and Slovo[index + 1] != 'ř' and Slovo[index + 1] != 'ž' and Slovo[index + 1] != 'ě':
                             Slova.append(Slovo)
                 if Slovo not in Slova:
                     nalezene_slovo_Y = [char for char in Slovo if char in 'hkr']
                     if len(nalezene_slovo_Y) > 0:
                         index = Slovo.index(nalezene_slovo_Y[0])
 
-                        if index < len(Slovo) - 1 and Slovo[index + 1] != 'i':
+                        if index < len(Slovo) - 1 and Slovo[index + 1] != 'i' and Slovo[index + 1] != 'í':
                             Slova.append(Slovo) 
 
             veta = ' '.join(Slova).capitalize() + '.'
