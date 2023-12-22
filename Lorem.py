@@ -4,7 +4,8 @@ import string
 
 abeceda = 'abcčdďeěéfghiíjklmnňoópqrřsštťuúůvyýzž'
 abeceda_bez_carek = 'abcčdďeěfghijklmnňopqrřsštťuvyzž'
-
+with open("soubor.txt", "w", encoding="utf-8") as f:
+    f.write("prvni")
 dlouha_pismena = input("Dlouhé písmena? př.(ý,é) (y/n)")
 Pocet_odstavcu = int(input("Počet odstavců? "))
 pocet_slov = int(input("Počet slov?"))
@@ -40,7 +41,12 @@ if dlouha_pismena == "y":
         seznam = '\n'.join(odstavec)
         print(seznam)
         print()
+        with open("soubor.txt", "a", encoding="utf-8") as f:
+            f.write(seznam)
+            f.write("""
 
+""")
+            
 elif dlouha_pismena == "n":
     for i in range(Pocet_odstavcu):
         pocet_vet_v_odstavci = random.randint(1, 6)
@@ -73,7 +79,12 @@ elif dlouha_pismena == "n":
         seznam = '\n'.join(odstavec)
         print(seznam)
         print()
-        
+        with open("soubor.txt", "a", encoding="utf-8") as f:
+            f.write(seznam)
+            f.write("""
+
+""")
+            
 
 print("""
              *     ,MMM8&&&.            *
